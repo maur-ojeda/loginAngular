@@ -25,7 +25,9 @@ export class AuthenticationService {
     }
 
     login(username: string, password: string) {
+        //remoto
         return this.http.post<any>(`${environment.apiUrl}ping`, { username, password })
+        //local
         //return this.http.post<any>(`${environment.apiUrl}/users/authenticate`, { username, password })
             .pipe(map(user => {
                 // store user details and basic auth credentials in local storage to keep user logged in between page refreshes

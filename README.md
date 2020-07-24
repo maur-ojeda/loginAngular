@@ -1,5 +1,10 @@
-# angular-9-basic-authentication-example
+# login
+para cambiar de local a remoto
 
-Angular 9 - Basic HTTP Authentication Example
+en:
+src/app/_services/authentication.service.ts 
 
-For a demo and further details see https://jasonwatmore.com/post/2020/04/29/angular-9-basic-http-authentication-tutorial-example
+
+src/app/app.module.ts
+//comentar para remoto
+fakeBackendProvider

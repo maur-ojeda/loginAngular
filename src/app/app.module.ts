@@ -28,8 +28,9 @@ import { LoginComponent } from './login';
     providers: [
         { provide: HTTP_INTERCEPTORS, useClass: BasicAuthInterceptor, multi: true },
         { provide: HTTP_INTERCEPTORS, useClass: ErrorInterceptor, multi: true },
-        // provider used to create fake backend
-        fakeBackendProvider
+        
+        //comentar para remoto
+       // fakeBackendProvider
     ],
     bootstrap: [AppComponent]
 })
